@@ -149,6 +149,46 @@ a { color: var(--accent); text-decoration: none; }
 .terminal pre { padding: 18px; overflow-x: auto; }
 .terminal code { font-family: var(--mono); font-size: 0.85rem; color: #7fe0a4; line-height: 1.7; }
 
+/* ------------------------------ EDUCATION ------------------------------ */
+.edu-timeline {
+  position: relative;
+  margin-left: 10px;
+  padding-left: 28px;
+  border-left: 2px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.edu-item { position: relative; }
+.edu-item::before {
+  content: "";
+  position: absolute;
+  left: -37px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+.edu-content {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 22px;
+  transition: transform 0.15s, box-shadow 0.2s;
+}
+.edu-content:hover { transform: translateX(4px); box-shadow: var(--shadow); }
+.edu-date {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+.edu-content h3 { margin: 6px 0 4px; font-size: 1.12rem; }
+.edu-school { color: var(--muted); margin: 0; }
+.edu-grade { color: var(--text); font-weight: 600; font-size: 0.9rem; margin: 6px 0 0; }
+
 /* ------------------------------ SKILLS ------------------------------ */
 .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
 .skill-group {
