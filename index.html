@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai Madhavi Gandhaveeti · ML, Computer Vision & AI</title>
+  <meta name="description" content="Portfolio of Sai Madhavi Gandhaveeti — machine learning, computer vision, and AI application projects in Python and beyond." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ============================ NAV ============================ -->
+  <nav id="nav">
+    <a href="#home" class="brand">SM</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </div>
+  </nav>
+
+  <!-- ============================ HERO ============================ -->
+  <header id="home" class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Machine Learning · Computer Vision · AI</p>
+      <h1>Hi, I'm <span class="grad">Sai Madhavi</span></h1>
+      <p class="lead">
+        I build intelligent applications — from computer-vision pipelines and
+        deep-learning models to AI agents and full-stack web apps — and ship
+        them end to end.
+      </p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#projects">View my work</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/Madhavi-30" target="_blank" rel="noopener">GitHub ↗</a>
+        <!-- EDIT ME: confirm this is your exact LinkedIn URL -->
+        <a href="https://www.linkedin.com/in/sai-madhavi-gandhaveeti-7712" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================ ABOUT ============================ -->
+    <section id="about" class="section">
+      <h2><span class="num">01.</span> About me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm <strong>Sai Madhavi Gandhaveeti</strong>, a developer who enjoys
+            turning ideas into working software. My projects range across
+            <strong>machine learning &amp; computer vision</strong>,
+            <strong>AI agents</strong>, and <strong>full-stack web
+            applications</strong> — and I like owning a problem end to end, from
+            the data and models to the interface people actually use.
+          </p>
+          <p>
+            Recently I've worked on an OpenCV-based leaf-recognition system with
+            an optional deep-learning backend, LLM-powered AI assistants and
+            multi-agent tools, and TypeScript/JavaScript web apps and APIs.
+            I'm always learning and looking for the next interesting problem.
+          </p>
+          <ul class="facts">
+            <!-- EDIT ME: fill these in -->
+            <li>🎓 [Degree / College, Year]</li>
+            <li>💻 Building with Python, JavaScript/TypeScript &amp; Java</li>
+            <li>🌱 Interests: computer vision, applied ML, AI agents</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <div class="terminal">
+            <div class="term-bar"><span></span><span></span><span></span></div>
+            <pre><code>&gt; whoami
+sai_madhavi
+
+&gt; focus
+["computer vision",
+ "machine learning",
+ "ai agents"]
+
+&gt; stack
+["python", "opencv",
+ "pytorch", "fastapi",
+ "typescript"]
+
+&gt; status
+"building &amp; learning"</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ SKILLS ============================ -->
+    <section id="skills" class="section">
+      <h2><span class="num">02.</span> Skills &amp; tools</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Java</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>ML / Computer Vision / AI</h3>
+          <ul>
+            <li>OpenCV</li>
+            <li>scikit-learn</li>
+            <li>PyTorch</li>
+            <li>NumPy</li>
+            <li>Transfer learning</li>
+            <li>LLMs &amp; AI agents</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Web / Backend</h3>
+          <ul>
+            <li>FastAPI</li>
+            <li>Node.js</li>
+            <li>REST APIs</li>
+            <li>HTML / CSS</li>
+            <li>PWAs</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>Docker</li>
+            <li>pytest</li>
+            <li>VS Code</li>
+            <li>Linux / CLI</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PROJECTS ============================ -->
+    <section id="projects" class="section">
+      <h2><span class="num">03.</span> Projects</h2>
+
+      <!-- Featured: Leaf Recognition -->
+      <article class="project featured">
+        <div class="project-body">
+          <p class="eyebrow">Featured project</p>
+          <h3>🍃 Leaf Recognition</h3>
+          <p class="project-desc">
+            An end-to-end computer-vision system that identifies plant species
+            from a photo of a single leaf — and reports the scientific name. It
+            segments the leaf with OpenCV, extracts 20 hand-crafted shape,
+            colour and texture features, and classifies with a scikit-learn SVM.
+            An optional MobileNetV2 transfer-learning backend boosts real-world
+            accuracy. Shipped three ways: a CLI, a Tkinter desktop app, and an
+            installable mobile web app (FastAPI + PWA), with a full pytest suite.
+          </p>
+          <ul class="tags">
+            <li>Python</li><li>OpenCV</li><li>scikit-learn</li>
+            <li>PyTorch</li><li>FastAPI</li><li>Tkinter</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Madhavi-30/Leaf-recognition" target="_blank" rel="noopener">Code ↗</a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="leaf-emoji">🍃</div>
+        </div>
+      </article>
+
+      <!-- Other projects (pulled from GitHub — refine descriptions as you like) -->
+      <div class="project-grid">
+        <article class="project card">
+          <h3>🤖 AI Companion</h3>
+          <p class="project-desc">
+            A conversational AI companion built in Python — an LLM-powered
+            assistant you can chat with.
+          </p>
+          <ul class="tags"><li>Python</li><li>LLM</li><li>AI</li></ul>
+          <div class="project-links"><a href="https://github.com/Madhavi-30/AI-companion" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+
+        <article class="project card">
+          <h3>🧩 Multi-Agent Use-Case Generator</h3>
+          <p class="project-desc">
+            A Python tool that uses collaborating AI agents to automatically
+            generate use cases.
+          </p>
+          <ul class="tags"><li>Python</li><li>Multi-agent</li><li>LLM</li></ul>
+          <div class="project-links"><a href="https://github.com/Madhavi-30/multi-agent-usecase-generator" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+
+        <article class="project card">
+          <h3>📅 Appointment Booking API</h3>
+          <p class="project-desc">
+            A TypeScript backend REST API for booking and managing appointments.
+          </p>
+          <ul class="tags"><li>TypeScript</li><li>REST API</li><li>Node.js</li></ul>
+          <div class="project-links"><a href="https://github.com/Madhavi-30/Appointment-Booking-Api" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+
+        <article class="project card">
+          <h3>🗓️ Attendance Management System</h3>
+          <p class="project-desc">
+            A web application to record, track and manage attendance.
+          </p>
+          <ul class="tags"><li>JavaScript</li><li>Web App</li></ul>
+          <div class="project-links"><a href="https://github.com/Madhavi-30/attendance-management-system-main" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+
+        <article class="project card">
+          <h3>❓ Quiz App</h3>
+          <p class="project-desc">
+            An interactive quiz application for testing knowledge across topics.
+          </p>
+          <ul class="tags"><li>Web App</li><li>JavaScript</li></ul>
+          <div class="project-links"><a href="https://github.com/Madhavi-30/quiz-app" target="_blank" rel="noopener">Code ↗</a></div>
+        </article>
+
+        <article class="project card">
+          <h3>➕ More on GitHub</h3>
+          <p class="project-desc">
+            Explore the rest of my repositories, including experiments with
+            Docker and data-structure practice.
+          </p>
+          <ul class="tags"><li>Python</li><li>Java</li><li>Docker</li></ul>
+          <div class="project-links"><a href="https://github.com/Madhavi-30?tab=repositories" target="_blank" rel="noopener">View all ↗</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACT ============================ -->
+    <section id="contact" class="section contact">
+      <h2><span class="num">04.</span> Get in touch</h2>
+      <p class="contact-lead">
+        I'm always open to interesting projects and opportunities. Reach me
+        through any of the links below.
+      </p>
+      <div class="contact-links">
+        <!-- EDIT ME: add a PUBLIC email you're comfortable sharing, or remove this button -->
+        <a class="btn primary" href="mailto:your.email@example.com">✉️ Email me</a>
+        <a class="btn" href="https://github.com/Madhavi-30" target="_blank" rel="noopener">GitHub</a>
+        <!-- EDIT ME: confirm your exact LinkedIn URL -->
+        <a class="btn" href="https://www.linkedin.com/in/sai-madhavi-gandhaveeti-7712" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Sai Madhavi Gandhaveeti · Built with HTML, CSS &amp; a bit of JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
